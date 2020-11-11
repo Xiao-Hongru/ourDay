@@ -1,0 +1,55 @@
+/*==========================================
+                scss自定义变量
+===========================================*/
+
+
+/*==================
+  基本变量
+===================*/
+$font: #333;
+$font-size: 16px;
+$color: #000000;
+$main-color:linear-gradient(to top, rgba(51, 137, 232, 0.75), rgba(51, 137, 232, 1));
+
+
+/**-----------公共滚动条样式--------------*/
+@mixin focus-scroll-bar {
+  overflow-y: auto;
+  &::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 5px;
+    height: 5px;
+    border: none;
+  }
+  &::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 2.5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(136, 136, 136, 0.3);
+    background: rgba(136, 136, 136, 0.3);
+    border: none;
+  }
+  &::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    border-radius: 5px;
+    opacity: 0.3 !important;
+
+  }
+}
+
+/**-----------隐藏式滚动条样式--------------*/
+@mixin hide-scroll-bar {
+  overflow-y: auto;
+  &::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 1px;
+    height: 1px;
+    border: none;
+  }
+  &::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 0.5px;
+    -webkit-box-shadow: inset 0 0 1px rgba(136, 136, 136, 0.3);
+    background: rgba(136, 136, 136, 0.3);
+    border: none;
+  }
+  &::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    border-radius: 0.5px;
+    opacity: 0.3 !important;
+
+  }
+}
