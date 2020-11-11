@@ -34,7 +34,7 @@
           {
             id:'1',
             // url:require("@/assets/imgs/egg/1.jpg"),
-            url:'./static/egg/2.jpg',
+            url:'./static/egg/1.jpg',
             text:'一',
             iconId:'#icon-home',
             backText:'妈妈',
